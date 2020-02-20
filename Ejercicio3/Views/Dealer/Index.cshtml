@@ -1,7 +1,61 @@
-﻿
+﻿@model Ejercicio_3.Models.Dealer
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<html>
+<head></head>
+<body>
+    <div class="row justify-content-center" style="padding-top: 2em;">
+        <div style="width: 100%">
+            <label for="nombre">NOMBRE:</label>
+            <input type="text" ID="nombre" class="form-control" value="@Model.Nombre" />
+
+            <label for="color">COLOR:</label>
+            <input type="text" ID="color" class="form-control" value="@Model.Color" />
+
+            <label for="marca">MARCA:</label>
+            <input type="text" ID="marca" class="form-control" value="@Model.Marca" />
+
+            <label for="chasis">CHASIS:</label>
+            <input type="text" ID="chasis" class="form-control" value="@Model.Chasis" />
+
+            <button type="submit" style="float:right; margin: 15px 0;" name="agregar" id="agregar" class="btn btn-info">Agregar</button>
+        </div>
+        
+
+        <table id="tabla" class="table table-striped table-active border-bottom">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">NOMBRE</th>
+                    <th scope="col">COLOR</th>
+                    <th scope="col">MARCA</th>
+                    <th colspan="2" scope="col">CHASIS</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo">
+                <tr>
+                    <td scope="row">001</td>
+                    <td>Manuel</td>
+                    <td>Azul</td>
+                    <td>Toyota</td>
+                    <td>KE20 — 1166 cm3 Sedan, 2-door/4-door (Std, DX, Hi-DX)</td>
+                    <td>
+                        <button type="button" onclick="deleteRow(this)" id="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+    <script>
+        function deleteRow(r) {
+            var i = r.parentNode.parentNode.rowIndex;
+            document.getElementById("tabla").deleteRow(i);
+        }
+    </script>
+</body>
+</html>
 

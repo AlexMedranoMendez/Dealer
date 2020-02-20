@@ -6003,11 +6003,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\prog3\\Ejercicio 3\\Ejercicio 3.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\prog3\\Ejercicio3\\Ejercicio 3.csproj",
       "projectName": "Ejercicio 3",
-      "projectPath": "C:\\Users\\user\\Desktop\\prog3\\Ejercicio 3\\Ejercicio 3.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\prog3\\Ejercicio3\\Ejercicio 3.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\prog3\\Ejercicio 3\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\prog3\\Ejercicio3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
